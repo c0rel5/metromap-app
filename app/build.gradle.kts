@@ -31,10 +31,6 @@ android {
     // Две версии из одной кодовой базы: phone (как раньше) и tv (Android TV, управление пультом)
     flavorDimensions += "device"
     productFlavors {
-        create("phone") {
-            dimension = "device"
-            buildConfigField("boolean", "TV", "false")
-        }
         create("tv") {
             dimension = "device"
             applicationIdSuffix = ".tv"
